@@ -14,7 +14,9 @@ from app.test_config import globalTest
 
 class TestBucketlist(globalTest):
     """
-        This class holds all the test methods that...
+        This class holds the tests for creating new a new bucketlist, \
+        view an bucketlist or bucketlists, edit bucketlists, delete \
+        bucketlist and search for bucketlists.
     """
 
     def setUp(cls):

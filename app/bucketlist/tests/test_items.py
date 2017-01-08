@@ -12,7 +12,9 @@ from app.test_config import globalTest
 
 class Test_Items(globalTest):
     """
-        something nice...
+        This class holds the tests for creating new a new item, \
+        view an item or items, edit items, delete item and search \
+        items for their respective bucketlists.
     """
 
     def setUp(cls):
