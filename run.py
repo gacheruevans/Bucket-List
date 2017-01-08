@@ -22,12 +22,14 @@ api.add_resource(Login, "/auth/login", endpoint="login")
 api.add_resource(Bucketlist, "/bucketlists/", endpoint="bucketlist")
 
 api.add_resource(OneBucketlist, "/bucketlists/<bucketlists_id>",
-                 endpoint="Onebucketlist")
+                 endpoint="onebucketlist")
 
-api.add_resource(Items, "/bucketlists/<id>/items/", endpoint="items")
+api.add_resource(Items, "/bucketlists/<bucketlists_id>/items/",
+                 endpoint="items")
 
 api.add_resource(OneBucketListItem,
-                 "/bucketlists/<id>/items/<item_id>", endpoint="Oneitems")
+                 "/bucketlists/<bucketlists_id>/items/<item_id>",
+                 endpoint="oneitem")
 
 
 def make_shell_context():

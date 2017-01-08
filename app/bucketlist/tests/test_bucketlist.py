@@ -14,7 +14,7 @@ from app.test_config import globalTest
 
 class TestBucketlist(globalTest):
     """
-                This class holds all the test methods that...
+        This class holds all the test methods that...
     """
 
     def setUp(cls):
