@@ -18,9 +18,8 @@ class testRegister(globalTest):
         response = self.client.get(url_for('register'))
         data = json.loads(response.get_data(as_text=True))
         self.assert_status(response, 200)
-        self.assertEqual('To register,send a POST request with username, \
-            password and email to /auth/register.',
-                         data['message'])
+        self.assertIn('To register,send a POST request with username',
+                      data['message'])
 
     def test_registration_new_user(self):
         response = self.client.post(
@@ -29,9 +28,9 @@ class testRegister(globalTest):
                 {
                     'username': 'Evans',
                     'password': 'nd00th1ngz',
-                    'email': 'gacheruevans0@gmail.com'}),
-            content_type='application/json')
-        self.assertEqual(response.status_code, 200)
+                    'email': 'gacheruevans0@gmail.com'})
+        )
+        self.assertEqual(response.status_code, 201)
         data = json.loads(response.get_data(as_text=True))
         self.assertIsNotNone(data)
         self.assertIn("created successfully",
@@ -52,8 +51,8 @@ class testRegister(globalTest):
                 {
                     'username': 'Evans',
                     'password': 'nd00th1ngz',
-                    'email': 'gacheruevans0@gmail.com'}),
-            content_type='application/json')
+                    'email': 'gacheruevans0@gmail.com'})
+        )
         data = json.loads(response.get_data(as_text=True))
         self.assertIsNotNone(data)
         self.assertIn("User already exists",
@@ -65,8 +64,8 @@ class testRegister(globalTest):
             data=json.dumps({
                 'username': 'Trial',
                 'email': 'trial@gmail.com',
-                'password': '123'}),
-            content_type='application/json')
+                'password': '123'})
+        )
         self.assertEqual(response.status_code, 400)
         data = json.loads(response.get_data(as_text=True))
         self.assertIsNotNone(data)
@@ -76,8 +75,8 @@ class testRegister(globalTest):
     def test_incomplete_details_on_registration(self):
         response = self.client.post(
             url_for('register'),
-            data=json.dumps({'username': 'Evans'}),
-            content_type='application/json')
+            data=json.dumps({'username': 'Evans'})
+        )
         self.assertEqual(response.status_code, 400)
         data = json.loads(response.get_data(as_text=True))
         self.assertIsNotNone(data)

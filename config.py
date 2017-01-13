@@ -8,6 +8,7 @@ class Config(object):
     """ 
      Defined database using Sqlite
     """
+    SECRET_KEY = '876587326432uyrhietweryoi'
     SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(base_dir, 'ndoo.db')
 
 

@@ -29,27 +29,20 @@ class testLogin(globalTest):
         db.session.add(user)
         db.session.commit()
 
-    def test_index_endpoint(self):
-        response = self.client.get(url_for('home'))
-        data = json.loads(response.get_data(as_text=True))
-        self.assert_status(response, 200)
-        self.assertIn('Welcome to the BucketList API.',
-                      data['message'])
-
     def test_login_endpoint(self):
         response = self.client.get(url_for('login'))
         data = json.loads(response.get_data(as_text=True))
         self.assert_status(response, 200)
-        self.assertEqual('To login,send a POST request to /auth/login.',
-                         data['message'])
+        self.assertIn('Login by sending a POST request to /auth/login',
+                      data['message'])
 
     def test_login_with_right_credentials(self):
         response = self.client.post(
             url_for('login'),
             data=json.dumps(
                 {'username': 'Evans',
-                 'password': 'nd00th1ngz'}),
-            content_type='application/json')
+                 'password': 'nd00th1ngz'})
+        )
         data = json.loads(response.get_data(as_text=True))
         self.assertIn("token", data.keys())
 
@@ -58,8 +51,8 @@ class testLogin(globalTest):
             url_for('login'),
             data=json.dumps(
                 {'username': 'Ann',
-                 'password': 'm0nty'}),
-            content_type='application/json')
+                 'password': 'm0nty'})
+        )
         self.assert_status(response, 400)
         data = json.loads(response.get_data(as_text=True))
         self.assertIsNotNone(data)
@@ -71,9 +64,9 @@ class testLogin(globalTest):
             data=json.dumps(
                 {
                     'username': '',
-                    'password': ''}),
-            content_type='application/json')
-        self.assert_status(response, 400)
+                    'password': ''})
+        )
+        self.assert_status(response, 401)
         data = json.loads(response.get_data(as_text=True))
         self.assertIsNotNone(data)
         self.assertEqual('Kindly fill in the missing details',

@@ -2,9 +2,6 @@ from app import db
 from app.auth.models import Base
 
 
-# Bucketlist and Item class models
-
-
 class Bucketlist(Base):
     """
     This class contains the database schema of the Bucketlist
@@ -15,7 +12,7 @@ class Bucketlist(Base):
 
     name = db.Column(db.String(128), nullable=False, unique=True)
     created_by = db.Column(db.Integer, db.ForeignKey(
-        'auth_user.username'), nullable=False)
+        'auth_user.id'), nullable=False)
     creator = db.relationship('Users',
                               backref=db.backref('bucketlist',
                                                  lazy='dynamic'))
@@ -33,7 +30,7 @@ class Item(Base):
     __tablename__ = 'items'
 
     name = db.Column(db.String(128), nullable=False)
-    done = db.Column(db.String(128), nullable=False)
+    done = db.Column(db.Boolean, default=False)
     bucketlist_id = db.Column(db.Integer, db.ForeignKey('bucketlist.id'))
     bucketlist = db.relationship('Bucketlist',
                                  backref=db.backref('items', lazy='dynamic'))
