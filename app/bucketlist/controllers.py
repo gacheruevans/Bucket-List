@@ -300,7 +300,7 @@ class BucketlistItem(Resource):
         name = data['name']
         if not len(name):
             abort(
-                401,
+                400,
                 message="Kindly provide the name")
         bucketlist = Bucketlist.query.filter_by(
             created_by=user_id,

@@ -187,7 +187,7 @@ class Test_Items(globalTest):
             url_for('items', bucketlists_id=self.bucketlist.id),
             data=json.dumps({'name': ''}),
             headers=self.token)
-        self.assertEqual(response.status_code, 401)
+        self.assertEqual(response.status_code, 400)
         data = json.loads(response.get_data(as_text=True))
         self.assertIsNotNone(data)
         self.assertIn("provide the name",

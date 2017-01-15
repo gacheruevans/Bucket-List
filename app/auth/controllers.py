@@ -36,7 +36,7 @@ class Login(Resource):
                   message="Kindly fill in the missing details")
 
         user = Users.query.filter_by(username=username).first()
-        if user is None:
+        if not user :
             abort(400, message="User does not exist")
         if user.verify_password(password):
             payload = {
@@ -81,6 +81,9 @@ class Register(Resource):
         if len(password) < 4:
             abort(400,
                   message="Password should be 4 or more characters")
+        if '@' not in email or '.' not in email:
+            abort(400,
+                  message="Invalid email address")
 
         user = Users.query.filter_by(username=username).first()
         if user is not None:
@@ -95,5 +98,6 @@ class Register(Resource):
             db.session.add(new_user)
             db.session.commit()
             return {'message': "{} created successfully".format(username)}, 201
-        except Exception:
-            abort(500, message="User not created")
+        except Exception as e:
+            abort(500, message= str(e))
+                #"User not created")

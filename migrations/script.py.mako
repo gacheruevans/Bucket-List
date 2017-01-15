@@ -9,9 +9,7 @@ from alembic import op
 import sqlalchemy as sa
 import passlib
 import sqlalchemy_utils
-
 ${imports if imports else ""}
-
 
 # revision identifiers, used by Alembic.
 revision = ${repr(up_revision)}
