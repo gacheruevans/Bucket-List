@@ -9,22 +9,38 @@ In this exercise I was required to create a Flask API for a bucket list service.
 
 | Endpoint                 				               		       | Functionality 						 |    
 | -----------------------------------------------------------------|:-----------------------------------:|
-| `POST /auth/login`         				                       |  Logs a user in                     |
-| `POST /auth/register`      				                       |  Register a user                    |
-| `POST /bucketlists`       				                       |  Create a new bucket list	         |
-| `GET /bucketlists`						                       |  List all the created bucket lists	 | 
-| `GET /bucketlists/**<bucketlists_id>**`		                   |  Get single bucket list             |                     
-| `PUT /bucketlists/**<bucketlists_id>** `                         |  Update this bucket list            |                       
-| `DELETE /bucketlists/**<bucketlists_id>**`				       |  Delete this single bucket list     |                              
-| `POST /bucketlists/**<bucketlists_id>**/items`                   |  Create a new item in bucket list   |                                
-| `PUT /bucketlists/**<bucketlists_id>**/items/**<item_id>**`      |  Update a bucket list item          |                         
-| `DELETE /bucketlists/**<bucketlists_id>**/items/**<item_id>**`   |  Delete an item in a bucket list    |
+| [x] `POST /auth/login`         				                   |  Logs a user in                     |
+| [x] `POST /auth/register`      				                   |  Register a user                    |
+| [x] `POST /bucketlists`       				                   |  Create a new bucket list	         |
+| [x] `GET /bucketlists`						                   |  List all the created bucket lists	 | 
+| [x] `GET /bucketlists/<bucketlists_id>`		                   |  Get single bucket list             |                     
+| [x] `PUT /bucketlists/<bucketlists_id> `                         |  Update this bucket list            |                       
+| [x] `DELETE /bucketlists/<bucketlists_id>`				       |  Delete this single bucket list     |                              
+| [x] `POST /bucketlists/<bucketlists_id>/items`                   |  Create a new item in bucket list   |                                
+| [x] `PUT /bucketlists/<bucketlists_id>/items/<item_id>`          |  Update a bucket list item          |                         
+| [x] `DELETE /bucketlists/<bucketlists_id>/items/<item_id>`       |  Delete an item in a bucket list    |
+
+##Options
+
+| Endpoint                 				               		       | Functionality 						 	  |    
+| -----------------------------------------------------------------|:----------------------------------------:|
+| [x] `SEARCH /bucketlists?q=id`         				           | Search by id                       	  |
+| [x] `LIMIT /bucketlists?limit=id`      				           | Number of items per page(default is 20) |
+
+
+| Method                 				               		       | Description 						 	  |    
+| -----------------------------------------------------------------|:----------------------------------------:|
+| GET         				           							   | Retrieves a resource(s)                 |
+| POST      				                                       | Creates a new resource                  |
+| PUT         				                                       | Updates an existing resource            |
+| DELETE      				                                       | Deletes an existing resource            |
+
 
 
 ##Installation
 1. Create a working directory.
 
-    mkdir Projects
+    	mkdir Projects
     
 2. Clone this repository.
 
@@ -42,7 +58,7 @@ In this exercise I was required to create a Flask API for a bucket list service.
     
 4. Create a virtual environment.
     
-    	mkvirtualenv **env** workon **env**
+    	mkvirtualenv env workon env
 
 when selecting the virtual environment, you can pick any name that suits you for now you will be using **env**
     
