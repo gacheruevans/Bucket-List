@@ -7,33 +7,33 @@ This application helps you log and catalog all the stuff you want to accomplish 
 ##Task Description:
 In this exercise I was required to create a Flask API for a bucket list service. Specification for the API is shown below.
 
-| Endpoint                 				               		       | Functionality 						 |    
-| -----------------------------------------------------------------|:-----------------------------------:|
-| [x] `POST /auth/login`         				                   |  Logs a user in                     |
-| [x] `POST /auth/register`      				                   |  Register a user                    |
-| [x] `POST /bucketlists`       				                   |  Create a new bucket list	         |
-| [x] `GET /bucketlists`						                   |  List all the created bucket lists	 | 
-| [x] `GET /bucketlists/<bucketlists_id>`		                   |  Get single bucket list             |                     
-| [x] `PUT /bucketlists/<bucketlists_id> `                         |  Update this bucket list            |                       
-| [x] `DELETE /bucketlists/<bucketlists_id>`				       |  Delete this single bucket list     |                              
-| [x] `POST /bucketlists/<bucketlists_id>/items`                   |  Create a new item in bucket list   |                                
-| [x] `PUT /bucketlists/<bucketlists_id>/items/<item_id>`          |  Update a bucket list item          |                         
-| [x] `DELETE /bucketlists/<bucketlists_id>/items/<item_id>`       |  Delete an item in a bucket list    |
+| Endpoint                 				               		   | Functionality 						 |    
+| -------------------------------------------------------------|:-----------------------------------:|
+| `POST /auth/login`         				                   |  Logs a user in                     |
+| `POST /auth/register`      				                   |  Register a user                    |
+| `POST /bucketlists`       				                   |  Create a new bucket list	         |
+| `GET /bucketlists`						                   |  List all the created bucket lists	 | 
+| `GET /bucketlists/<bucketlists_id>`		                   |  Get single bucket list             |                     
+| `PUT /bucketlists/<bucketlists_id> `                         |  Update this bucket list            |                       
+| `DELETE /bucketlists/<bucketlists_id>`				       |  Delete this single bucket list     |                              
+| `POST /bucketlists/<bucketlists_id>/items`                   |  Create a new item in bucket list   |                                
+| `PUT /bucketlists/<bucketlists_id>/items/<item_id>`          |  Update a bucket list item          |                         
+| `DELETE /bucketlists/<bucketlists_id>/items/<item_id>`       |  Delete an item in a bucket list    |
 
 ##Options
 
-| Endpoint                 				               		       | Functionality 						 	  |    
-| -----------------------------------------------------------------|:----------------------------------------:|
-| [x] `SEARCH /bucketlists?q=id`         				           | Search by id                       	  |
-| [x] `LIMIT /bucketlists?limit=id`      				           | Number of items per page(default is 20) |
+| Endpoint                 				               		   | Functionality 						 	  |    
+| -------------------------------------------------------------|:----------------------------------------:|
+| `SEARCH /bucketlists?q=id`         				           | Search by id                       	  |
+| `LIMIT /bucketlists?limit=id`      				           | Number of items per page(default is 20) |
 
 
-| Method                 				               		       | Description 						 	  |    
-| -----------------------------------------------------------------|:----------------------------------------:|
-| GET         				           							   | Retrieves a resource(s)                 |
-| POST      				                                       | Creates a new resource                  |
-| PUT         				                                       | Updates an existing resource            |
-| DELETE      				                                       | Deletes an existing resource            |
+| Method                 				               		   | Description 						 	  |    
+| -------------------------------------------------------------|:----------------------------------------:|
+| GET         				           						   | Retrieves a resource(s)                 |
+| POST      				                                   | Creates a new resource                  |
+| PUT         				                                   | Updates an existing resource            |
+| DELETE      				                                   | Deletes an existing resource            |
 
 
 
