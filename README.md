@@ -24,8 +24,8 @@ In this exercise I was required to create a Flask API for a bucket list service.
 
 | Endpoint                 				               		   | Functionality 						 	  |    
 | -------------------------------------------------------------|:----------------------------------------:|
-| `SEARCH /bucketlists?q=id`         				           | Search by id                       	  |
-| `LIMIT /bucketlists?limit=id`      				           | Number of items per page(default is 20) |
+| `SEARCH /bucketlists?q=abc`         				               | Enter a search parameter                       	  |
+| `LIMIT /bucketlists?limit=2`      				           | Number of items per page(default is 20) |
 
 
 | Method                 				               		   | Description 						 	  |    
@@ -34,7 +34,7 @@ In this exercise I was required to create a Flask API for a bucket list service.
 | POST      				                                   | Creates a new resource                  |
 | PUT         				                                   | Updates an existing resource            |
 | DELETE      				                                   | Deletes an existing resource            |
-
+| SEARCH                                                       | Searches for an existing resource       |
 
 
 ##Installation
