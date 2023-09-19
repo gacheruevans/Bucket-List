@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/andela-gacheruevans/cp2-bucketlist.svg?branch=develop)](https://travis-ci.org/andela-gacheruevans/cp2-bucketlist)
 [![Coverage Status](https://coveralls.io/repos/github/andela-gacheruevans/cp2-bucketlist/badge.svg?branch=develop)](https://coveralls.io/github/andela-gacheruevans/cp2-bucketlist?branch=develop)
-# cp2-bucketlist
+# Flask, SqlAlchemy & SQL Bucket List API.
 
 This application helps you log and catalog all the stuff you want to accomplish before you expire. 
 
@@ -58,7 +58,10 @@ In this exercise I was required to create a Flask API for a bucket list service.
     
 4. Create a virtual environment.
     
-    	mkvirtualenv env workon env
+    	mkvirtualenv env 
+
+5. Start virtual env 
+		workon env
 
 when selecting the virtual environment, you can pick any name that suits you for now you will be using **env**
     
