@@ -12,6 +12,8 @@ def create_app(config_name):
     the application and configures it.
     """
     app = Flask(__name__)
+    
+    app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
 
     app.config.from_object(config[config_name])
 
