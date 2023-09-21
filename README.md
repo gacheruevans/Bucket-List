@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/andela-gacheruevans/cp2-bucketlist.svg?branch=develop)](https://travis-ci.org/andela-gacheruevans/cp2-bucketlist)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/gacheruevans/cp2-bucketlist/tree/develop.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/gacheruevans/cp2-bucketlist/tree/develop)
 [![Coverage Status](https://coveralls.io/repos/github/andela-gacheruevans/cp2-bucketlist/badge.svg?branch=develop)](https://coveralls.io/github/andela-gacheruevans/cp2-bucketlist?branch=develop)
 # Flask, SqlAlchemy & SQL Bucket List API.
 
@@ -191,6 +191,4 @@ Access the endpoints using your preferred client e.g Postman
 		{   
 			"message": "buy a plot item created successfully"
 		}
-
-
 
