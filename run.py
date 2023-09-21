@@ -8,6 +8,20 @@ from app.bucketlist.controllers import (Bucketlists,
                                         OneBucketlist,
                                         BucketlistItem,
                                         OneBucketListItem)
+__all__ = [
+    "Migrate",
+    "MigrateCommand",
+    "Manager",
+    "Shell",
+    "app",
+    "db",
+    "Register",
+    "Login",
+    "BucketLists",
+    "OneBucketList",
+    "BucketListItem",
+    "OneBucketListItem",
+]
 
 manager = Manager(app)
 migrate = Migrate(app, db)

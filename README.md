@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/andela-gacheruevans/cp2-bucketlist.svg?branch=develop)](https://travis-ci.org/andela-gacheruevans/cp2-bucketlist)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/gacheruevans/cp2-bucketlist/tree/develop.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/gacheruevans/cp2-bucketlist/tree/develop)
 [![Coverage Status](https://coveralls.io/repos/github/andela-gacheruevans/cp2-bucketlist/badge.svg?branch=develop)](https://coveralls.io/github/andela-gacheruevans/cp2-bucketlist?branch=develop)
 # Flask, SqlAlchemy & SQL Bucket List API.
 
@@ -28,7 +28,7 @@ In this exercise I was required to create a Flask API for a bucket list service.
 | `LIMIT /bucketlists?limit=2`      				           | Number of items per page(default is 20)  |
 
 
-| Method                 				               		   | Description 						 	  |    
+| Methods                 				               		   | Description 						 	  |    
 | -------------------------------------------------------------|:----------------------------------------:|
 | GET         				           						   | Retrieves a resource(s)                 |
 | POST      				                                   | Creates a new resource                  |
@@ -65,26 +65,30 @@ In this exercise I was required to create a Flask API for a bucket list service.
 
 when selecting the virtual environment, you can pick any name that suits you for now you will be using **env**
     
-5. Set up the environment requirements.
+6. Set up the environment requirements.
     
     	pip install -r requirements.txt
 
 
-6. Initialize, migrate and update the database.
+7. Initialize, migrate and update the database.
 	
 		python run.py db init
 		python run.py db migrate
 		python run.py db upgrade
 
-7. Test the application by running the following command.
+7. Test the application can run in various python packages, by running the following command.
 	
 		tox
 
-8. Test the application coverage by running the following command.
+8. Run Project tests, by running the following command.
+	
+		pytest -v
+
+9. Test the application coverage by running the following command.
 	
 		coverage report --omit=run.py 
     
-6. Run the server.
+10. Run the server.
     
     	python run.py runserver
 
@@ -117,6 +121,15 @@ Access the endpoints using your preferred client e.g Postman
 		}
 
 - POST http://127.0.0.1:5000/api/v1/auth/login will login user and generate a token.
+
+	body
+	
+		{
+			"username":"Evans",
+			"password":"evans123"
+		}
+
+	response
 	
 		{
 		 	"message": "Welcome Evans",
@@ -182,6 +195,4 @@ Access the endpoints using your preferred client e.g Postman
 		{   
 			"message": "buy a plot item created successfully"
 		}
-
-
 
