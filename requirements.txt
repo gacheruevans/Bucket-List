@@ -23,7 +23,7 @@ mypy==1.5.1
 mypy-extensions==1.0.0
 passlib==1.7.0
 pluggy==0.13.1
-py==1.4.32
+py==1.8.2
 pycrypto==2.6.1
 PyJWT==1.4.2
 PyMySQL==0.7.9
