@@ -28,7 +28,7 @@ In this exercise I was required to create a Flask API for a bucket list service.
 | `LIMIT /bucketlists?limit=2`      				           | Number of items per page(default is 20)  |
 
 
-| Method                 				               		   | Description 						 	  |    
+| Methods                 				               		   | Description 						 	  |    
 | -------------------------------------------------------------|:----------------------------------------:|
 | GET         				           						   | Retrieves a resource(s)                 |
 | POST      				                                   | Creates a new resource                  |
