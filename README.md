@@ -1,4 +1,4 @@
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/gacheruevans/cp2-bucketlist/tree/develop.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/gacheruevans/cp2-bucketlist/tree/develop)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/gacheruevans/cp2-bucketlist/tree/develop.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/gacheruevans/cp2-bucketlist/tree/develop)
 [![Coverage Status](https://coveralls.io/repos/github/andela-gacheruevans/cp2-bucketlist/badge.svg?branch=develop)](https://coveralls.io/github/andela-gacheruevans/cp2-bucketlist?branch=develop)
 # Flask, SqlAlchemy & SQL Bucket List API.
 
