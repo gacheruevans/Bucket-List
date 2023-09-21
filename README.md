@@ -65,12 +65,12 @@ In this exercise I was required to create a Flask API for a bucket list service.
 
 when selecting the virtual environment, you can pick any name that suits you for now you will be using **env**
     
-5. Set up the environment requirements.
+6. Set up the environment requirements.
     
     	pip install -r requirements.txt
 
 
-6. Initialize, migrate and update the database.
+7. Initialize, migrate and update the database.
 	
 		python run.py db init
 		python run.py db migrate
@@ -84,7 +84,7 @@ when selecting the virtual environment, you can pick any name that suits you for
 	
 		coverage report --omit=run.py 
     
-6. Run the server.
+9. Run the server.
     
     	python run.py runserver
 
@@ -117,6 +117,15 @@ Access the endpoints using your preferred client e.g Postman
 		}
 
 - POST http://127.0.0.1:5000/api/v1/auth/login will login user and generate a token.
+
+	body
+	
+		{
+			"username":"Evans",
+			"password":"evans123"
+		}
+
+	response
 	
 		{
 		 	"message": "Welcome Evans",
