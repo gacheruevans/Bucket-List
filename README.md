@@ -76,15 +76,19 @@ when selecting the virtual environment, you can pick any name that suits you for
 		python run.py db migrate
 		python run.py db upgrade
 
-7. Test the application by running the following command.
+7. Test the application can run in various python packages, by running the following command.
 	
 		tox
 
-8. Test the application coverage by running the following command.
+8. Run Project tests, by running the following command.
+	
+		pytest -v
+
+9. Test the application coverage by running the following command.
 	
 		coverage report --omit=run.py 
     
-9. Run the server.
+10. Run the server.
     
     	python run.py runserver
 
