@@ -1,12 +1,13 @@
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/gacheruevans/Flask-Bucket-List-API/tree/develop.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/gacheruevans/Flask-Bucket-List-API/tree/develop)
-
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/gacheruevans/Flask-Bucket-List-API/tree/develop.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/gacheruevans/Flask-Bucket-List-API/tree/develop)
 [![Coverage Status](https://coveralls.io/repos/github/andela-gacheruevans/cp2-bucketlist/badge.svg?branch=develop)](https://coveralls.io/github/andela-gacheruevans/cp2-bucketlist?branch=develop)
+
 # Flask, SqlAlchemy & SQL Bucket List API.
 
 This application helps you log and catalog all the stuff you want to accomplish before you expire. 
 
-##Task Description:
-In this exercise I was required to create a Flask API for a bucket list service. Specification for the API is shown below.
+## Endpoint Documentation:
+
+Flask api's endpoints.
 
 | Endpoint                 				               		   | Functionality 						 |    
 | -------------------------------------------------------------|:-----------------------------------:|
@@ -90,7 +91,7 @@ when selecting the virtual environment, you can pick any name that suits you for
     
     	python run.py runserver
 
-## Sample Api Use Case
+## FLask Api Use Case.
 Access the endpoints using your preferred client e.g Postman
 
 - GET http://127.0.0.1:5000/api/v1/auth/login will give you the following message.
