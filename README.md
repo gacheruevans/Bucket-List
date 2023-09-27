@@ -5,8 +5,9 @@
 
 This application helps you log and catalog all the stuff you want to accomplish before you expire. 
 
-##Task Description:
-In this exercise I was required to create a Flask API for a bucket list service. Specification for the API is shown below.
+## Endpoint Documentation:
+
+Flask api's endpoints.
 
 | Endpoint                 				               		   | Functionality 						 |    
 | -------------------------------------------------------------|:-----------------------------------:|
@@ -90,7 +91,7 @@ when selecting the virtual environment, you can pick any name that suits you for
     
     	python run.py runserver
 
-## Sample Api Use Case
+## FLask Api Use Case.
 Access the endpoints using your preferred client e.g Postman
 
 - GET http://127.0.0.1:5000/api/v1/auth/login will give you the following message.
