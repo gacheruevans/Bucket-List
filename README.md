@@ -1,4 +1,5 @@
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/gacheruevans/Bucket-List/tree/develop.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/gacheruevans/Bucket-List/tree/develop)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/gacheruevans/Flask-Bucket-List-API/tree/develop.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/gacheruevans/Flask-Bucket-List-API/tree/develop)
+
 [![Coverage Status](https://coveralls.io/repos/github/andela-gacheruevans/cp2-bucketlist/badge.svg?branch=develop)](https://coveralls.io/github/andela-gacheruevans/cp2-bucketlist?branch=develop)
 # Flask, SqlAlchemy & SQL Bucket List API.
 
@@ -37,24 +38,21 @@ In this exercise I was required to create a Flask API for a bucket list service.
 | SEARCH                                                       | Searches for an existing resource       |
 
 
-##Installation
-1. Create a working directory.
+## Installation Instructions.
 
-    	mkdir Projects
-    
-2. Clone this repository.
+1. Clone this repository.
 
     * via HTTPS
 
-    	- https://github.com/andela-gacheruevans/cp2-bucketlist.git
+    	- https://github.com/gacheruevans/Flask-Bucket-List-API.git
 
     * via SSH
 
-    	- git@github.com:andela-gacheruevans/cp2-bucketlist.git
+    	- git@github.com:gacheruevans/Flask-Bucket-List-API.git
 
 3. Navigate to project directory.
 
-		cd cp2-bucketlist  
+		cd Flask-Bucket-List  
     
 4. Create a virtual environment.
     
@@ -92,7 +90,7 @@ when selecting the virtual environment, you can pick any name that suits you for
     
     	python run.py runserver
 
-##Sample Api Use Case
+## Sample Api Use Case
 Access the endpoints using your preferred client e.g Postman
 
 - GET http://127.0.0.1:5000/api/v1/auth/login will give you the following message.
