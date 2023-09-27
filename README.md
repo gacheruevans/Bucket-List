@@ -1,6 +1,6 @@
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/gacheruevans/Flask-Bucket-List-API/tree/develop.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/gacheruevans/Flask-Bucket-List-API/tree/develop)
-
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/gacheruevans/Flask-Bucket-List-API/tree/develop.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/gacheruevans/Flask-Bucket-List-API/tree/develop)
 [![Coverage Status](https://coveralls.io/repos/github/andela-gacheruevans/cp2-bucketlist/badge.svg?branch=develop)](https://coveralls.io/github/andela-gacheruevans/cp2-bucketlist?branch=develop)
+
 # Flask, SqlAlchemy & SQL Bucket List API.
 
 This application helps you log and catalog all the stuff you want to accomplish before you expire. 
