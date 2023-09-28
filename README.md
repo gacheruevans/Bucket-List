@@ -22,7 +22,7 @@ Flask api's endpoints.
 | `PUT /bucketlists/<bucketlists_id>/items/<item_id>`          |  Update a bucket list item          |                         
 | `DELETE /bucketlists/<bucketlists_id>/items/<item_id>`       |  Delete an item in a bucket list    |
 
-##Options
+## Options
 
 | Endpoint                 				               		   | Functionality 						 	  |    
 | -------------------------------------------------------------|:----------------------------------------:|
