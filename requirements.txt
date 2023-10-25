@@ -42,6 +42,6 @@ SQLAlchemy==1.1.4
 SQLAlchemy-Utils==0.32.12
 tox==2.5.0
 virtualenv==15.1.0
-Werkzeug==0.16.1
+Werkzeug==3.0.1
 WTForms==2.1
 pipdeptree==2.13.0
